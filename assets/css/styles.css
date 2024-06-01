@@ -716,46 +716,51 @@ button {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 266px;
+    height: 94%;
     border-radius: inherit;
     background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
 }
 
 .staff-iem__img-wrap::after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    width: calc(100% + 36px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 
 .staff__item:nth-child(1) .staff-iem__img-wrap::after {
-    content: url(../img/staff-decor01.svg);
+    background-image: url(../img/staff-decor01.svg);
 }
 
 .staff__item:nth-child(2) .staff-iem__img-wrap::before {
     background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
 }
 .staff__item:nth-child(2) .staff-iem__img-wrap::after {
-    content: url(../img/staff-decor02.svg);
+    background-image: url(../img/staff-decor02.svg);
 }
 
 .staff__item:nth-child(3) .staff-iem__img-wrap::before {
     background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
 }
 .staff__item:nth-child(3) .staff-iem__img-wrap::after {
-    content: url(../img/staff-decor03.svg);
+    background-image: url(../img/staff-decor03.svg);
 }
 
 .staff__item:nth-child(4) .staff-iem__img-wrap::before {
     background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
 }
 .staff__item:nth-child(4) .staff-iem__img-wrap::after {
-    content: url(../img/staff-decor04.svg);
+    background-image: url(../img/staff-decor04.svg);
 }
 
 .staff__item:nth-child(even) .staff-iem__img-wrap::after {
-    bottom: initial;
-    top: 16px;
+    background-position: 0 16px;
 }
 
 .staff-item__img {
